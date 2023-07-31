@@ -1,0 +1,86 @@
+/* 
+Colours 
+- #F6BF4C - orange 
+- #D4204F - red
+- #2F3EEB - blue
+- #20D46F - green
+- #F6E554 - yellow
+
+*/
+
+
+* {
+    color: rgb(95, 95, 95);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: border-box;
+    border: 2px solid #F6BF4C;
+    border-radius: 6px;
+    margin: 60px auto;
+    width: 400px;
+    height: 500px;
+}
+
+header {
+    background-color: #F6BF4C;
+    color: white;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.addBox {
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+li {
+    width: 300px;
+    list-style-type: none;
+    font-size: larger;
+    margin-bottom: 12.5px;
+}
+
+input {
+    border: 1px solid #F6BF4C;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: xx-large;
+    color: rgb(95, 95, 95);
+}
+
+button:hover {
+    color: #F6BF4C;
+}
+
+.deleteButton {
+    float: right;
+    cursor: pointer;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.deleteButton:hover {
+    color: #F6BF4C;
+}
