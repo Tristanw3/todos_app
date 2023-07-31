@@ -8,7 +8,6 @@ Colours
 
 */
 
-
 * {
     color: rgb(95, 95, 95);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,10 +25,11 @@ Colours
 header {
     background-color: #F6BF4C;
     color: white;
-    height: 50px;
+    line-height: 50px;
     padding-left: 15px;
     font-size: 2.25rem;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 lower {
@@ -41,46 +41,58 @@ lower {
 
 .addBox {
     display: flex;
-    /* justify-content: center; */
+    justify-content:space-between;
+    height: 22px;
+}
 
+.addButton {
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.addButton:hover {
+    filter: invert(63%) sepia(60%) saturate(544%) hue-rotate(94deg) brightness(93%) contrast(97%);
 }
 
 li {
-    width: 300px;
+    width: 100%;
     list-style-type: none;
     font-size: larger;
     margin-bottom: 12.5px;
 }
 
 input {
-    border: 1px solid #F6BF4C;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    font-size: larger;
+    color: rgb(120, 120, 120);
+    
+    
 }
 
 textarea:focus, input:focus{
     outline: none;
-}
-
-button {
-    cursor: pointer;
     border: none;
-    outline: none;
-    border: none;
-    background-color: white;
-    font-size: xx-large;
-    color: rgb(95, 95, 95);
-}
-
-button:hover {
+    border-bottom: 1px solid #F6BF4C;
     color: #F6BF4C;
 }
 
+img {
+    cursor: pointer;
+
+}
+
 .deleteButton {
+    /* display: inline-block; */
+    height: 22px;
+    width: 22px;
     float: right;
     cursor: pointer;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
 }
 
 .deleteButton:hover {
-    color: #F6BF4C;
+    filter: invert(21%) sepia(96%) saturate(2331%) hue-rotate(327deg) brightness(87%) contrast(97%);
 }

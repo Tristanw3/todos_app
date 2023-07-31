@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styling.css">
+    <img id="deleteIcon" src="./icons/cancel.svg" style="display: none;"></img>
 </head>
 
 <body>
@@ -14,8 +15,8 @@
         <lower>
             <div class="todos"></div>
             <div class="addBox">
-                <button class="addButton">+</button>
-                <input class="inputTodoText" type="text">
+                <input class="inputTodoText" type="text" maxlength="20" placeholder="Enter Todo">
+                <img src="./icons/add.svg" class="addButton"></img>
             </div>
         </lower>
     </div>
